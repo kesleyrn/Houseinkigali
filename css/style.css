@@ -216,8 +216,8 @@ a {
 /* Custom primary color for links, logo, and icon-star */
 a, .logo, .icon-star.text-warning {
   color: #b8860b !important;
+  font-weight: 600; 
 }
-    color: #001a3b; }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
@@ -9206,7 +9206,7 @@ textarea.form-control-lg {
 
 .logo {
   font-size: 24px;
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: #b8860b !important;
   font-weight: 500; }
   .logo:hover {
     color: #fff !important; }
@@ -9666,7 +9666,7 @@ textarea {
   transform: translate(-50%, -50%); }
 
 .menu-bg-wrap {
-  background-color: #005555;
+  background-color: #fff;
   padding: 20px 30px;
   position: relative;
   float: left;
@@ -10335,6 +10335,25 @@ nav[aria-label="breadcrumb"] li:before {
   font-size: 14px; }
 
 .site-footer {
+
+/* Show all property items in a grid */
+.property-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: flex-start;
+}
+.property-list .property-item {
+  flex: 1 1 300px;
+  max-width: 32%;
+  min-width: 280px;
+  margin-bottom: 30px;
+}
+
+/* Hide the old slider navigation if still present */
+#property-nav {
+  display: none !important;
+}
   background: #efefef;
   font-size: 14px;
   color: #888;
